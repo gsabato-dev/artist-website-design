@@ -21,10 +21,10 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-br from-primary/30 via-primary/25 to-accent/35" />
           <div className="container relative z-10 mx-auto px-4 lg:px-8 py-24 text-center">
             <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl mb-6 text-balance text-primary-foreground">
-              Tango teacher and singer in Berlin
+              Tango teacher, singer, and performer
             </h1>
             <p className="text-lg md:text-xl text-primary-foreground/95 mb-12 max-w-2xl mx-auto text-pretty">
-              Private tango lessons and live tango singing for events.
+              Gabriele Sabato is a tango teacher, singer, and performer based between Berlin and Mexico.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="text-base">
@@ -116,12 +116,27 @@ export default function Home() {
 
         {/* Short Intro */}
         <section className="container mx-auto px-4 lg:px-8 py-16">
-          <div className="max-w-3xl mx-auto text-center">
-            <p className="text-lg leading-relaxed text-muted-foreground">
-              I bring together dance, voice, and teaching through a practice rooted in both analytical precision and
-              somatic awareness. Based between Berlin and Mexico, I work with students and organizers who value clarity,
-              taste, and authentic connection.
-            </p>
+          <div className="max-w-3xl mx-auto text-center space-y-6">
+            <h2 className="font-serif text-3xl md:text-4xl">Short bio</h2>
+            <div className="space-y-4 text-lg leading-relaxed text-muted-foreground">
+              <p>Gabriele Sabato is a tango teacher, singer, and performer based between Berlin and Mexico.</p>
+              <p>
+                Born in Southern Italy to an Argentinian mother, he encountered tango almost twenty years ago and has
+                since developed a practice rooted in dance, music, and embodiment.
+              </p>
+              <p>
+                He began his tango path in Rome, studying with a wide range of maestros and developing a strong
+                foundation in technique, musicality, and improvisation. Alongside dance, his background in classical
+                music and years of choral singing led him naturally toward tango music, first as a DJ and later as a
+                singer.
+              </p>
+              <p>
+                Gabriele has performed and collaborated with musicians and ensembles in Berlin and internationally,
+                bringing tango music to milongas, concerts, and interdisciplinary settings. He has been teaching tango
+                for over ten years, combining structured pedagogy with a somatic, body-based approach that supports
+                clarity, connection, and sustainable learning.
+              </p>
+            </div>
           </div>
         </section>
 
