@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Instagram, Mail } from "lucide-react"
+import { Instagram, Mail, MessageCircle } from "lucide-react"
 
 export function Footer() {
   return (
@@ -37,8 +37,15 @@ export function Footer() {
           <div>
             <h4 className="font-medium text-sm mb-4">Connect</h4>
             <div className="flex gap-4">
+              <Link
+                href="/contact#contact-form"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
+                <Mail className="h-5 w-5" />
+                <span className="sr-only">Email</span>
+              </Link>
               <a
-                href="https://instagram.com"
+                href="https://instagram.com/g_sabato"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"
@@ -47,11 +54,13 @@ export function Footer() {
                 <span className="sr-only">Instagram</span>
               </a>
               <a
-                href="mailto:contact@example.com"
+                href="https://wa.me/393519252854?text=Hi%20Gabriele%2C%20I%27d%20like%20to%20ask%20about%20tango%20lessons%20or%20singing%20for%20events."
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"
               >
-                <Mail className="h-5 w-5" />
-                <span className="sr-only">Email</span>
+                <MessageCircle className="h-5 w-5" />
+                <span className="sr-only">WhatsApp</span>
               </a>
             </div>
           </div>

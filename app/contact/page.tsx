@@ -1,8 +1,7 @@
 "use client"
 
-import type React from "react"
-
 import { useState } from "react"
+import type { FormEvent } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -14,17 +13,38 @@ import { Footer } from "@/components/footer"
 import { Instagram, Mail } from "lucide-react"
 
 export default function ContactPage() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    inquiry: "",
-    message: "",
-  })
+  const [inquiry, setInquiry] = useState("")
+  const [submitStatus, setSubmitStatus] = useState<"idle" | "sending" | "success" | "error">("idle")
+  const whatsappLink =
+    "https://wa.me/393519252854?text=Hi%20Gabriele%2C%20I%27d%20like%20to%20ask%20about%20tango%20lessons%20or%20singing%20for%20events."
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    console.log("Form submitted:", formData)
-    // Form submission logic would go here
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+    setSubmitStatus("sending")
+
+    const form = event.currentTarget
+    const formData = new FormData(form)
+
+    try {
+      const response = await fetch("https://formspree.io/f/xbdjlykr", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+        },
+        body: formData,
+      })
+
+      if (response.ok) {
+        form.reset()
+        setInquiry("")
+        setSubmitStatus("success")
+        return
+      }
+    } catch (error) {
+      console.error("Form submission error:", error)
+    }
+
+    setSubmitStatus("error")
   }
 
   return (
@@ -36,7 +56,8 @@ export default function ContactPage() {
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: "url('/images/outdoor-profile.png')",
+              backgroundImage: "url('/images/hero-portrait.png')",
+              backgroundPosition: "center 37%",
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-primary/85 via-accent/75 to-primary/80" />
@@ -55,13 +76,16 @@ export default function ContactPage() {
           <div className="max-w-2xl mx-auto">
             <Card>
               <CardContent className="p-8">
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form
+                  id="contact-form"
+                  onSubmit={handleSubmit}
+                  className="space-y-6"
+                >
                   <div className="space-y-2">
                     <Label htmlFor="name">Name</Label>
                     <Input
                       id="name"
-                      value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      name="name"
                       required
                     />
                   </div>
@@ -71,18 +95,14 @@ export default function ContactPage() {
                     <Input
                       id="email"
                       type="email"
-                      value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                      name="email"
                       required
                     />
                   </div>
 
                   <div className="space-y-2">
                     <Label htmlFor="inquiry">What are you interested in?</Label>
-                    <Select
-                      value={formData.inquiry}
-                      onValueChange={(value) => setFormData({ ...formData, inquiry: value })}
-                    >
+                    <Select value={inquiry} onValueChange={setInquiry}>
                       <SelectTrigger id="inquiry">
                         <SelectValue placeholder="Select an option" />
                       </SelectTrigger>
@@ -93,6 +113,7 @@ export default function ContactPage() {
                         <SelectItem value="other">Other</SelectItem>
                       </SelectContent>
                     </Select>
+                    <input type="hidden" name="inquiry" value={inquiry} />
                   </div>
 
                   <div className="space-y-2">
@@ -100,17 +121,26 @@ export default function ContactPage() {
                     <Textarea
                       id="message"
                       rows={6}
-                      value={formData.message}
-                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                      name="message"
                       required
                     />
                   </div>
 
-                  <Button type="submit" className="w-full" size="lg">
-                    Send message
+                  <Button type="submit" className="w-full" size="lg" disabled={submitStatus === "sending"}>
+                    {submitStatus === "sending" ? "Sending..." : "Send message"}
                   </Button>
 
-                  <p className="text-sm text-muted-foreground text-center">I typically respond within 24-48 hours</p>
+                  {submitStatus === "success" && (
+                    <p className="text-sm text-foreground text-center">Thanks! Your message has been sent.</p>
+                  )}
+                  {submitStatus === "error" && (
+                    <p className="text-sm text-destructive text-center">
+                      Something went wrong. Please try again or use WhatsApp.
+                    </p>
+                  )}
+                  {submitStatus === "idle" && (
+                    <p className="text-sm text-muted-foreground text-center">I typically respond within 24-48 hours</p>
+                  )}
                 </form>
               </CardContent>
             </Card>
@@ -120,11 +150,14 @@ export default function ContactPage() {
               <h3 className="font-serif text-2xl mb-6">Other ways to connect</h3>
               <div className="flex justify-center gap-6">
                 <a
-                  href="mailto:contact@example.com"
+                  href={whatsappLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  <Mail className="h-5 w-5" />
-                  <span>contact@example.com</span>
+                  <span className="inline-flex h-9 items-center justify-center rounded-md border border-input bg-background px-3 text-sm font-medium">
+                    WhatsApp me
+                  </span>
                 </a>
                 <a
                   href="https://instagram.com"
@@ -133,7 +166,7 @@ export default function ContactPage() {
                   className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
                 >
                   <Instagram className="h-5 w-5" />
-                  <span>@tangoberlin</span>
+                  <span>@g_sabato</span>
                 </a>
               </div>
             </div>

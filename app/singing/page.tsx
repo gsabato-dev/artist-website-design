@@ -15,7 +15,8 @@ export default function SingingPage() {
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: "url('/images/suit-profile.png')",
+              backgroundImage: "url('/images/outdoor-profile.png')",
+              backgroundPosition: "center 28%",
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-accent/35 via-accent/30 to-primary/40" />
@@ -84,12 +85,6 @@ export default function SingingPage() {
                 </div>
                 <div className="aspect-video bg-background rounded-lg flex items-center justify-center">
                   <p className="text-muted-foreground text-sm">Video embed 2</p>
-                </div>
-                <div className="aspect-video bg-background rounded-lg flex items-center justify-center">
-                  <p className="text-muted-foreground text-sm">Video embed 3</p>
-                </div>
-                <div className="aspect-video bg-background rounded-lg flex items-center justify-center">
-                  <p className="text-muted-foreground text-sm">Video embed 4</p>
                 </div>
               </div>
             </div>

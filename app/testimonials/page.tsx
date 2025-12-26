@@ -68,7 +68,8 @@ export default function TestimonialsPage() {
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: "url('/images/hero-portrait.png')",
+              backgroundImage: "url('/images/testimonial.png')",
+              backgroundPosition: "center 35%",
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-primary/85 via-accent/75 to-primary/80" />

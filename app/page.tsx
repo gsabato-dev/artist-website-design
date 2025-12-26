@@ -16,6 +16,7 @@ export default function Home() {
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{
               backgroundImage: "url('/images/hero-portrait.png')",
+              backgroundPosition: "center 47%",
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-primary/30 via-primary/25 to-accent/35" />
@@ -34,10 +35,10 @@ export default function Home() {
                 <Link href="/singing">Book singing for an event</Link>
               </Button>
             </div>
-            <div className="mt-8">
+            <div className="mt-8 flex justify-center">
               <a
                 href="#video"
-                className="text-sm text-muted-foreground hover:text-foreground underline underline-offset-4 transition-colors"
+                className="inline-flex items-center justify-center rounded-md border border-primary-foreground/50 bg-primary-foreground/10 px-5 py-2 text-sm font-semibold text-primary-foreground shadow-sm transition hover:bg-primary-foreground/20"
               >
                 Watch a live performance
               </a>
@@ -107,8 +108,15 @@ export default function Home() {
           <div className="container relative z-10 mx-auto px-4 lg:px-8">
             <div className="max-w-4xl mx-auto">
               <h2 className="font-serif text-3xl md:text-4xl mb-8 text-center">Live Performance</h2>
-              <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
-                <p className="text-muted-foreground">YouTube video embed placeholder</p>
+              <div className="aspect-video bg-muted rounded-lg overflow-hidden">
+                <iframe
+                  className="h-full w-full"
+                  src="https://www.youtube.com/embed/vdhk0T3JqR8?si=cUX-NeIf949mP5sg"
+                  title="Live performance"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
               </div>
             </div>
           </div>

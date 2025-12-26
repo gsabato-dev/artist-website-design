@@ -15,7 +15,8 @@ export default function LessonsPage() {
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: "url('/images/outdoor-profile.png')",
+              backgroundImage: "url('/images/suit-profile.png')",
+              backgroundPosition: "center 33%",
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-primary/35 via-primary/30 to-accent/40" />
@@ -72,7 +73,8 @@ export default function LessonsPage() {
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: "url('/images/outdoor-full.png')",
+              backgroundImage: "url('/images/tango-couple.png')",
+              backgroundPosition: "center 22%",
             }}
           />
           <div className="absolute inset-0 bg-muted/50" />

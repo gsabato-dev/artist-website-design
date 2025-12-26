@@ -14,6 +14,7 @@ export default function AboutPage() {
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{
               backgroundImage: "url('/images/suit-profile.png')",
+              backgroundPosition: "center 35%",
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-primary/85 via-primary/75 to-accent/80" />
@@ -53,9 +54,10 @@ export default function AboutPage() {
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{
               backgroundImage: "url('/images/outdoor-full.png')",
+              backgroundPosition: "center 25%",
             }}
           />
-          <div className="absolute inset-0 bg-muted/90" />
+          <div className="absolute inset-0 bg-muted/70" />
           <div className="container relative z-10 mx-auto px-4 lg:px-8">
             <div className="max-w-3xl mx-auto space-y-6">
               <p className="text-sm font-medium uppercase tracking-wide text-muted-foreground">
