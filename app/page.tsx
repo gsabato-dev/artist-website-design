@@ -147,9 +147,16 @@ export default function Home() {
             <p className="text-lg mb-8 opacity-90 max-w-2xl mx-auto">
               Whether you're looking for private lessons or booking a performance, I'd love to hear from you.
             </p>
-            <Button asChild size="lg" variant="secondary">
-              <Link href="/contact">Get in touch</Link>
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button asChild size="lg" variant="secondary">
+                <Link href="https://calendly.com/gsabato-tango/60min" target="_blank" rel="noopener noreferrer">
+                  Book a Lesson
+                </Link>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="bg-white/20 border-white text-white hover:bg-white/30">
+                <Link href="/contact">Hire Me to Sing</Link>
+              </Button>
+            </div>
           </div>
         </section>
       </main>
