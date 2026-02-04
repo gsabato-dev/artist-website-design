@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
-import { Users, Heart, Music2, Brain } from "lucide-react"
+import { Music2, User, Users, Heart } from "lucide-react"
 
 export default function LessonsPage() {
   return (
@@ -26,7 +26,7 @@ export default function LessonsPage() {
                 Private Tango Lessons
               </h1>
               <p className="text-lg md:text-xl text-primary-foreground/90 text-pretty leading-relaxed">
-                Develop your dance through clear, precise teaching that honors both technique and connection.
+                I'll help you dance tango in a way that feels good and looks great.
               </p>
             </div>
           </div>
@@ -34,34 +34,51 @@ export default function LessonsPage() {
 
         {/* Who Lessons Are For */}
         <section className="container mx-auto px-4 lg:px-8 py-24">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-7xl mx-auto">
             <h2 className="font-serif text-3xl md:text-4xl mb-12 text-center">Who these lessons are for</h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              <Card>
-                <CardContent className="p-6 text-center">
-                  <div className="mb-4 inline-flex p-3 bg-primary/10 rounded-lg">
-                    <Users className="h-6 w-6 text-primary" />
+            <div className="grid md:grid-cols-3 gap-10">
+              <Card className="border-2">
+                <CardContent className="p-8 text-center">
+                  <div className="mb-6 inline-flex p-4 bg-primary/10 rounded-lg">
+                    <User className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="font-medium text-lg mb-2">Solo dancers</h3>
-                  <p className="text-sm text-muted-foreground">Build your own technique and musicality independently</p>
+                  <h3 className="font-serif text-xl md:text-2xl mb-3">Private Classes</h3>
+                  <p className="text-base text-muted-foreground mb-6">
+                    I work with you one-on-one (or with your partner) to focus on exactly what you need.
+                  </p>
+                  <div className="pt-4 border-t border-border">
+                    <p className="text-lg font-medium text-foreground">80€/hour</p>
+                    <p className="text-sm text-muted-foreground mt-1">5 class package: 360€</p>
+                  </div>
                 </CardContent>
               </Card>
-              <Card>
-                <CardContent className="p-6 text-center">
-                  <div className="mb-4 inline-flex p-3 bg-primary/10 rounded-lg">
-                    <Heart className="h-6 w-6 text-primary" />
+              <Card className="border-2">
+                <CardContent className="p-8 text-center">
+                  <div className="mb-6 inline-flex p-4 bg-primary/10 rounded-lg">
+                    <Users className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="font-medium text-lg mb-2">Couples</h3>
-                  <p className="text-sm text-muted-foreground">Deepen your connection and shared understanding</p>
+                  <h3 className="font-serif text-xl md:text-2xl mb-3">Focused Small Groups</h3>
+                  <p className="text-base text-muted-foreground mb-6">
+                    Learn with your friends in a fun, relaxed setting.
+                  </p>
+                  <div className="pt-4 border-t border-border">
+                    <p className="text-lg font-medium text-foreground">100€/hour</p>
+                    <p className="text-sm text-muted-foreground mt-1">Max 6 people per group</p>
+                  </div>
                 </CardContent>
               </Card>
-              <Card>
-                <CardContent className="p-6 text-center">
-                  <div className="mb-4 inline-flex p-3 bg-primary/10 rounded-lg">
-                    <Brain className="h-6 w-6 text-primary" />
+              <Card className="border-2">
+                <CardContent className="p-8 text-center">
+                  <div className="mb-6 inline-flex p-4 bg-primary/10 rounded-lg">
+                    <Heart className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="font-medium text-lg mb-2">All levels</h3>
-                  <p className="text-sm text-muted-foreground">From complete beginners to advanced dancers</p>
+                  <h3 className="font-serif text-xl md:text-2xl mb-3">All levels</h3>
+                  <p className="text-base text-muted-foreground mb-6">
+                    I teach everyone from complete beginners to experienced dancers. All roles, all identities welcome.
+                  </p>
+                  <div className="pt-4 border-t border-border">
+                    <p className="text-lg font-medium text-foreground">Everyone is welcome</p>
+                  </div>
                 </CardContent>
               </Card>
             </div>
@@ -77,9 +94,9 @@ export default function LessonsPage() {
               backgroundPosition: "center 22%",
             }}
           />
-          <div className="absolute inset-0 bg-muted/50" />
+          <div className="absolute inset-0 bg-background/60" />
           <div className="container relative z-10 mx-auto px-4 lg:px-8">
-            <div className="max-w-3xl mx-auto">
+            <div className="max-w-3xl mx-auto bg-card/70 backdrop-blur-sm rounded-lg p-8 md:p-12">
               <h2 className="font-serif text-3xl md:text-4xl mb-8">What we work on</h2>
               <div className="space-y-6">
                 <div>
@@ -87,9 +104,8 @@ export default function LessonsPage() {
                     <Music2 className="h-5 w-5 text-accent" />
                     Connection
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Building authentic, responsive connection through awareness and listening. We explore how to
-                    communicate clearly through the embrace and develop sensitivity to your partner's movement.
+                  <p className="text-foreground/80 leading-relaxed">
+                    How do you connect with yourself and your partner while dancing? I'll help you build real, responsive connection through listening and awareness. You'll learn to communicate clearly through the embrace and tune into your partner's movement.
                   </p>
                 </div>
                 <div>
@@ -97,9 +113,8 @@ export default function LessonsPage() {
                     <Music2 className="h-5 w-5 text-accent" />
                     Musicality
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Understanding tango music deeply—its structure, phrasing, and emotional quality. We work on
-                    expressing the music through movement and developing your own musical voice.
+                  <p className="text-foreground/80 leading-relaxed">
+                    I'll teach you to really understand tango music: its structure, phrasing, and emotion. You'll learn to express the music through your body and develop your own style.
                   </p>
                 </div>
                 <div>
@@ -107,55 +122,10 @@ export default function LessonsPage() {
                     <Music2 className="h-5 w-5 text-accent" />
                     Technique
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Precise biomechanics that support freedom and expression. We focus on balance, axis, dissociation,
-                    and efficient movement patterns that serve the dance.
+                  <p className="text-foreground/80 leading-relaxed">
+                    Good technique should free you up, not hold you back. I focus on posture, walking, and movement patterns that actually feel good and serve your dance.
                   </p>
                 </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Teaching Approach */}
-        <section className="container mx-auto px-4 lg:px-8 py-24">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="font-serif text-3xl md:text-4xl mb-8">Teaching approach</h2>
-            <div className="prose prose-lg max-w-none">
-              <p className="text-muted-foreground leading-relaxed mb-4">
-                My teaching combines analytical clarity with somatic awareness. I break down complex movements into
-                understandable parts while maintaining focus on how the dance feels in your body.
-              </p>
-              <p className="text-muted-foreground leading-relaxed mb-4">
-                Each lesson is tailored to your specific needs and goals. We work at a pace that allows for genuine
-                integration, not just surface-level learning.
-              </p>
-              <p className="text-muted-foreground leading-relaxed">
-                The approach is grounded, precise, and human. No tango mysticism or unnecessary jargon—just clear
-                guidance that helps you develop your own authentic expression.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Practical Info */}
-        <section className="bg-secondary py-24">
-          <div className="container mx-auto px-4 lg:px-8">
-            <div className="max-w-3xl mx-auto">
-              <h2 className="font-serif text-3xl md:text-4xl mb-8">Practical information</h2>
-              <div className="space-y-4 text-muted-foreground">
-                <p>
-                  <strong className="text-foreground">Location:</strong> Berlin (Neukölln and Kreuzberg studios)
-                </p>
-                <p>
-                  <strong className="text-foreground">Languages:</strong> English, Italian, Spanish
-                </p>
-                <p>
-                  <strong className="text-foreground">Format:</strong> 60 or 90-minute sessions
-                </p>
-                <p>
-                  <strong className="text-foreground">Booking:</strong> Flexible scheduling via contact form
-                </p>
               </div>
             </div>
           </div>
@@ -169,19 +139,17 @@ export default function LessonsPage() {
               <Card>
                 <CardContent className="p-6">
                   <p className="text-muted-foreground italic mb-4">
-                    "The clarity and precision in teaching helped me understand concepts I'd struggled with for years.
-                    Highly recommended."
+                    "Being a dance teacher myself, I appreciate Gabriele's skill and reliability. In our private sessions I didn't only improve my tango; I learned a lot about myself. We worked on connection, posture, body tension, and how to make an embrace feel comfortable. His teaching gave me inspiration for other areas of my life. Highly recommended"
                   </p>
-                  <p className="text-sm text-muted-foreground">— Andreas, Berlin</p>
+                  <p className="text-sm text-muted-foreground">— Judith, Berlin</p>
                 </CardContent>
               </Card>
               <Card>
                 <CardContent className="p-6">
                   <p className="text-muted-foreground italic mb-4">
-                    "A rare combination of technical expertise and genuine care for students' progress. Every lesson
-                    builds on the last."
+                    "Wildly professional and slightly dangerous to your comfort zone. He'll crawl into your brain and rearrange how your body moves. Yes, he's overpriced, and yes, he's absolutely worth it. The classes are tough, ridiculously fun, and never boring. You'll complain, laugh, sweat, and then shamelessly book the next class anyway"
                   </p>
-                  <p className="text-sm text-muted-foreground">— Sofia, Amsterdam</p>
+                  <p className="text-sm text-muted-foreground">— Pauline, Berlin</p>
                 </CardContent>
               </Card>
             </div>

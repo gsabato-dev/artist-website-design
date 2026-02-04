@@ -8,8 +8,6 @@ export function Navigation() {
     { href: "/", label: "Home" },
     { href: "/lessons", label: "Private Tango Lessons" },
     { href: "/singing", label: "Singing for Events" },
-    { href: "/about", label: "About" },
-    { href: "/testimonials", label: "Testimonials" },
     { href: "/contact", label: "Contact" },
   ]
 
@@ -18,7 +16,7 @@ export function Navigation() {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="font-serif text-xl tracking-tight text-foreground">
-            Tango Berlin
+            Gabriele Tango
           </Link>
 
           {/* Desktop Navigation */}

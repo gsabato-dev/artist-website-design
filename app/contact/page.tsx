@@ -109,7 +109,6 @@ export default function ContactPage() {
                       <SelectContent>
                         <SelectItem value="lessons">Private lessons</SelectItem>
                         <SelectItem value="singing">Singing for events</SelectItem>
-                        <SelectItem value="dj">DJ</SelectItem>
                         <SelectItem value="other">Other</SelectItem>
                       </SelectContent>
                     </Select>

@@ -7,7 +7,7 @@ export function Footer() {
       <div className="container mx-auto px-4 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="font-serif text-lg mb-4">Tango Berlin</h3>
+            <h3 className="font-serif text-lg mb-4">Gabriele Tango</h3>
             <p className="text-sm text-muted-foreground">
               Private tango lessons and live tango singing for events in Berlin.
             </p>
@@ -21,12 +21,6 @@ export function Footer() {
               </Link>
               <Link href="/singing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                 Singing for Events
-              </Link>
-              <Link
-                href="/testimonials"
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-              >
-                Testimonials
               </Link>
               <Link href="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                 Contact
@@ -67,7 +61,7 @@ export function Footer() {
         </div>
 
         <div className="pt-8 border-t border-border text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} Tango Berlin. Based in Berlin & Mexico.</p>
+          <p>© {new Date().getFullYear()} Gabriele Tango. Based in Berlin.</p>
         </div>
       </div>
     </footer>

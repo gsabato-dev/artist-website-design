@@ -25,9 +25,6 @@ export default function InstaPage() {
             <Link href="/singing#videos">Watch videos</Link>
           </Button>
 
-          <Button asChild variant="ghost" className="w-full" size="lg">
-            <Link href="/testimonials">Testimonials</Link>
-          </Button>
 
           <Button asChild variant="ghost" className="w-full" size="lg">
             <Link href="/contact">Contact</Link>
