@@ -74,7 +74,7 @@ export default function LessonsPage() {
                   </div>
                   <h3 className="font-serif text-xl md:text-2xl mb-3">All levels</h3>
                   <p className="text-base text-muted-foreground mb-6">
-                    I teach everyone from complete beginners to experienced dancers. All roles, all identities welcome.
+                    I teach everyone from complete beginners to experienced dancers.
                   </p>
                   <div className="pt-4 border-t border-border">
                     <p className="text-lg font-medium text-foreground">Everyone is welcome</p>
