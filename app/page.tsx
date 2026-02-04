@@ -25,17 +25,9 @@ export default function Home() {
             <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl mb-6 text-balance text-primary-foreground">
               Tango teacher, singer and performer
             </h1>
-            <p className="text-lg md:text-xl text-primary-foreground/95 mb-12 max-w-2xl mx-auto text-pretty">
+            <p className="text-lg md:text-xl text-primary-foreground/95 max-w-2xl mx-auto text-pretty">
               I'm Gabriele. I teach tango and perform as a singer in Berlin.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="text-base">
-                <Link href="/lessons">Book a Lesson</Link>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="text-base bg-white/20 border-white text-white hover:bg-white/30">
-                <Link href="/singing">Hire Me to Sing</Link>
-              </Button>
-            </div>
           </div>
         </section>
 
