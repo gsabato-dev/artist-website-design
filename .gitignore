@@ -18,13 +18,15 @@ yarn-error.log*
 
 # env files
 .env*
-
+IMPLEMENTATION_INSTRUCTIONS.md
+breadcrumb.md
 # vercel
 .vercel
 
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+/public/videos
 
 # macOS
 .DS_Store
