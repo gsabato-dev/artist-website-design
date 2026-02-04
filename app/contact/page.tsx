@@ -65,7 +65,7 @@ export default function ContactPage() {
             <div className="max-w-3xl mx-auto text-center">
               <h1 className="font-serif text-4xl md:text-6xl mb-6 text-primary-foreground">Contact</h1>
               <p className="text-lg text-primary-foreground/90">
-                Get in touch about lessons, performances, or other inquiries
+                Get in touch about singing performances and bookings
               </p>
             </div>
           </div>
@@ -101,14 +101,15 @@ export default function ContactPage() {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="inquiry">What are you interested in?</Label>
+                    <Label htmlFor="inquiry">Type of event</Label>
                     <Select value={inquiry} onValueChange={setInquiry}>
                       <SelectTrigger id="inquiry">
                         <SelectValue placeholder="Select an option" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="lessons">Private lessons</SelectItem>
-                        <SelectItem value="singing">Singing for events</SelectItem>
+                        <SelectItem value="milonga">Milonga</SelectItem>
+                        <SelectItem value="concert">Concert</SelectItem>
+                        <SelectItem value="private">Private event</SelectItem>
                         <SelectItem value="other">Other</SelectItem>
                       </SelectContent>
                     </Select>

@@ -69,6 +69,11 @@ export default function SingingPage() {
                 </CardContent>
               </Card>
             </div>
+            <div className="mt-10 flex justify-center">
+              <Button asChild size="lg">
+                <Link href="/contact">Request a booking</Link>
+              </Button>
+            </div>
           </div>
         </section>
 

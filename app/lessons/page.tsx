@@ -50,6 +50,13 @@ export default function LessonsPage() {
                     <p className="text-lg font-medium text-foreground">80€/hour</p>
                     <p className="text-sm text-muted-foreground mt-1">5 class package: 360€</p>
                   </div>
+                  <div className="mt-6">
+                    <Button asChild className="w-full">
+                      <Link href="https://calendly.com/gsabato-tango/60min" target="_blank" rel="noopener noreferrer">
+                        Book Single Class
+                      </Link>
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
               <Card className="border-2">
@@ -62,8 +69,15 @@ export default function LessonsPage() {
                     Learn with your friends in a fun, relaxed setting.
                   </p>
                   <div className="pt-4 border-t border-border">
-                    <p className="text-lg font-medium text-foreground">100€/hour</p>
+                    <p className="text-lg font-medium text-foreground">80€/hour</p>
                     <p className="text-sm text-muted-foreground mt-1">Max 6 people per group</p>
+                  </div>
+                  <div className="mt-6">
+                    <Button asChild className="w-full">
+                      <Link href="https://calendly.com/gsabato-tango/60min" target="_blank" rel="noopener noreferrer">
+                        Book Single Class
+                      </Link>
+                    </Button>
                   </div>
                 </CardContent>
               </Card>
@@ -164,7 +178,7 @@ export default function LessonsPage() {
               Book your first lesson and begin developing your dance.
             </p>
             <Button asChild size="lg" variant="secondary">
-              <Link href="/contact">Book a lesson</Link>
+              <Link href="https://calendly.com/gsabato-tango/60min" target="_blank" rel="noopener noreferrer">Book a lesson</Link>
             </Button>
           </div>
         </section>
