@@ -5,27 +5,12 @@ export function Footer() {
   return (
     <footer className="border-t border-border bg-card mt-24">
       <div className="container mx-auto px-4 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           <div>
             <h3 className="font-serif text-lg mb-4">Gabriele Tango</h3>
             <p className="text-sm text-muted-foreground">
               Private tango lessons and live tango singing for events in Berlin.
             </p>
-          </div>
-
-          <div>
-            <h4 className="font-medium text-sm mb-4">Quick Links</h4>
-            <div className="flex flex-col gap-2">
-              <Link href="/lessons" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Private Tango Lessons
-              </Link>
-              <Link href="/singing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Singing for Events
-              </Link>
-              <Link href="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Contact
-              </Link>
-            </div>
           </div>
 
           <div>
