@@ -13,9 +13,9 @@ export function Footer() {
             </p>
           </div>
 
-          <div className="md:text-right">
+          <div className="md:ml-auto md:w-fit">
             <h4 className="font-medium text-sm mb-4">Connect</h4>
-            <div className="flex gap-4 md:justify-end">
+            <div className="flex gap-4">
               <a
                 href="https://www.youtube.com/playlist?list=PLzt6Tuc15lt4UxzIJOQSoS0qmbG2J591c"
                 target="_blank"
