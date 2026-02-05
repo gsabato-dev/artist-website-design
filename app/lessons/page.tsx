@@ -32,62 +32,137 @@ export default function LessonsPage() {
           </div>
         </section>
 
-        {/* Who Lessons Are For */}
+        {/* Lesson Options */}
         <section className="container mx-auto px-4 lg:px-8 py-24">
           <div className="max-w-7xl mx-auto">
-            <h2 className="font-serif text-3xl md:text-4xl mb-12 text-center">Who these lessons are for</h2>
+            <h2 className="font-serif text-3xl md:text-4xl mb-12 text-center">Lesson Options</h2>
             <div className="grid md:grid-cols-3 gap-10">
+              {/* Card 1: Private Lessons */}
               <Card className="border-2">
-                <CardContent className="p-8 text-center">
+                <CardContent className="p-8">
                   <div className="mb-6 inline-flex p-4 bg-primary/10 rounded-lg">
                     <User className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="font-serif text-xl md:text-2xl mb-3">Private Classes</h3>
-                  <p className="text-base text-muted-foreground mb-6">
-                    I work with you one-on-one (or with your partner) to focus on exactly what you need.
-                  </p>
-                  <div className="pt-4 border-t border-border">
-                    <p className="text-lg font-medium text-foreground">80€/hour</p>
-                    <p className="text-sm text-muted-foreground mt-1">5 class package: 360€</p>
+                  <h3 className="font-serif text-xl md:text-2xl mb-4">Private Lessons</h3>
+
+                  <div className="space-y-6">
+                    {/* Description */}
+                    <div>
+                      <p className="text-base text-muted-foreground">
+                        I work with you one-on-one (or with your partner) to focus on exactly what you need.
+                      </p>
+                    </div>
+
+                    {/* Pricing */}
+                    <div className="pt-4 border-t border-border">
+                      <p className="text-xs uppercase tracking-wider text-muted-foreground mb-2">Pricing</p>
+                      <p className="text-lg font-medium text-foreground">€80 / hour</p>
+                      <p className="text-sm text-muted-foreground mt-2">5-lesson package: €360</p>
+                    </div>
+
+                    {/* Location */}
+                    <div className="pt-4 border-t border-border">
+                      <p className="text-xs uppercase tracking-wider text-muted-foreground mb-2">Location</p>
+                      <p className="text-sm text-foreground">At my studio in Friedrichshain</p>
+                    </div>
+
+                    {/* Buttons */}
+                    <div className="pt-4 border-t border-border flex gap-3">
+                      <Button asChild className="flex-1">
+                        <Link href="https://cal.com/gabriele-tango/private-lesson" target="_blank" rel="noopener noreferrer">
+                          Book a Lesson
+                        </Link>
+                      </Button>
+                      <Button asChild variant="secondary" className="flex-1">
+                        <Link href="https://cal.com/gabriele-tango/private-5lesson-package" target="_blank" rel="noopener noreferrer">
+                          Book a Package
+                        </Link>
+                      </Button>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
+
+              {/* Card 2: Focused Small Groups */}
               <Card className="border-2">
-                <CardContent className="p-8 text-center">
+                <CardContent className="p-8">
                   <div className="mb-6 inline-flex p-4 bg-primary/10 rounded-lg">
                     <Users className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="font-serif text-xl md:text-2xl mb-3">Focused Small Groups</h3>
-                  <p className="text-base text-muted-foreground mb-6">
-                    Learn with your friends in a fun, relaxed setting.
-                  </p>
-                  <div className="pt-4 border-t border-border">
-                    <p className="text-lg font-medium text-foreground">80€/hour</p>
-                    <p className="text-sm text-muted-foreground mt-1">Max 6 people per group</p>
+                  <h3 className="font-serif text-xl md:text-2xl mb-4">Focused Small Groups</h3>
+
+                  <div className="space-y-6">
+                    {/* Description */}
+                    <div>
+                      <p className="text-base text-muted-foreground">
+                        Learn with your friends in a fun, relaxed, and focused setting.
+                      </p>
+                    </div>
+
+                    {/* Pricing */}
+                    <div className="pt-4 border-t border-border">
+                      <p className="text-xs uppercase tracking-wider text-muted-foreground mb-2">Pricing</p>
+                      <p className="text-lg font-medium text-foreground">€120 / 1.5 hours</p>
+                      <p className="text-sm text-muted-foreground mt-2">Max 6 people per group</p>
+                    </div>
+
+                    {/* Location */}
+                    <div className="pt-4 border-t border-border">
+                      <p className="text-xs uppercase tracking-wider text-muted-foreground mb-2">Location</p>
+                      <p className="text-sm text-foreground">At my studio in Friedrichshain</p>
+                    </div>
+
+                    {/* Button */}
+                    <div className="pt-4 border-t border-border">
+                      <Button asChild className="w-full">
+                        <Link href="https://cal.com/gabriele-tango/focused-small-group" target="_blank" rel="noopener noreferrer">
+                          Book a Focused Group Lesson
+                        </Link>
+                      </Button>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
+
+              {/* Card 3: Intensive Seminar */}
               <Card className="border-2">
-                <CardContent className="p-8 text-center">
+                <CardContent className="p-8">
                   <div className="mb-6 inline-flex p-4 bg-primary/10 rounded-lg">
                     <Heart className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="font-serif text-xl md:text-2xl mb-3">All levels</h3>
-                  <p className="text-base text-muted-foreground mb-6">
-                    I teach everyone from complete beginners to experienced dancers.
-                  </p>
-                  <div className="pt-4 border-t border-border">
-                    <p className="text-lg font-medium text-foreground">Everyone is welcome</p>
+                  <h3 className="font-serif text-xl md:text-2xl mb-4">Intensive Seminar</h3>
+
+                  <div className="space-y-6">
+                    {/* Description */}
+                    <div>
+                      <p className="text-base text-muted-foreground">
+                        A focused, in-depth session designed for concentrated work. Ideal for couples or specific technical goals.
+                      </p>
+                    </div>
+
+                    {/* Pricing */}
+                    <div className="pt-4 border-t border-border">
+                      <p className="text-xs uppercase tracking-wider text-muted-foreground mb-2">Pricing</p>
+                      <p className="text-lg font-medium text-foreground">€160 / 2 hours</p>
+                    </div>
+
+                    {/* Location */}
+                    <div className="pt-4 border-t border-border">
+                      <p className="text-xs uppercase tracking-wider text-muted-foreground mb-2">Location</p>
+                      <p className="text-sm text-foreground">At your place or my studio</p>
+                    </div>
+
+                    {/* Button */}
+                    <div className="pt-4 border-t border-border">
+                      <Button asChild className="w-full">
+                        <Link href="https://cal.com/gabriele-tango/private-1-on-1-lesson-intensive" target="_blank" rel="noopener noreferrer">
+                          Book an Intensive
+                        </Link>
+                      </Button>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
-            </div>
-            <div className="mt-12 text-center">
-              <Button asChild size="lg">
-                <Link href="https://calendly.com/gsabato-tango/60min" target="_blank" rel="noopener noreferrer">
-                  Book a Lesson
-                </Link>
-              </Button>
             </div>
           </div>
         </section>
@@ -154,7 +229,7 @@ export default function LessonsPage() {
               <Card>
                 <CardContent className="p-6">
                   <p className="text-muted-foreground italic mb-4">
-                    "Wildly professional and slightly dangerous to your comfort zone. He'll crawl into your brain and rearrange how your body moves. Yes, he's overpriced, and yes, he's absolutely worth it. The classes are tough, ridiculously fun, and never boring. You'll complain, laugh, sweat, and then shamelessly book the next class anyway"
+                    "Wildly professional and slightly dangerous to your comfort zone. He'll crawl into your brain and rearrange how your body moves. Yes, he's overpriced, and yes, he's absolutely worth it. The lessons are tough, ridiculously fun, and never boring. You'll complain, laugh, sweat, and then shamelessly book the next lesson anyway"
                   </p>
                   <p className="text-sm text-muted-foreground">— Pauline, Berlin</p>
                 </CardContent>
@@ -171,7 +246,7 @@ export default function LessonsPage() {
               Book your first lesson and begin developing your dance.
             </p>
             <Button asChild size="lg" variant="secondary">
-              <Link href="https://calendly.com/gsabato-tango/60min" target="_blank" rel="noopener noreferrer">Book a lesson</Link>
+              <Link href="https://cal.com/gabriele-tango/private-lesson" target="_blank" rel="noopener noreferrer">Book a lesson</Link>
             </Button>
           </div>
         </section>

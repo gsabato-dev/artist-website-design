@@ -141,12 +141,12 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="secondary">
-                <Link href="https://calendly.com/gsabato-tango/60min" target="_blank" rel="noopener noreferrer">
+                <Link href="https://cal.com/gabriele-tango/private-lesson" target="_blank" rel="noopener noreferrer">
                   Book a Lesson
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="bg-white/20 border-white text-white hover:bg-white/30">
-                <Link href="/contact">Hire Me to Sing</Link>
+                <Link href="/contact">Request a Singing Booking</Link>
               </Button>
             </div>
           </div>

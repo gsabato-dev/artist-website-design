@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Instagram, Mail, MessageCircle } from "lucide-react"
+import { Instagram, Youtube, MessageCircle } from "lucide-react"
 
 export function Footer() {
   return (
@@ -31,13 +31,15 @@ export function Footer() {
           <div>
             <h4 className="font-medium text-sm mb-4">Connect</h4>
             <div className="flex gap-4">
-              <Link
-                href="/contact#contact-form"
+              <a
+                href="https://www.youtube.com/playlist?list=PLzt6Tuc15lt4UxzIJOQSoS0qmbG2J591c"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"
               >
-                <Mail className="h-5 w-5" />
-                <span className="sr-only">Email</span>
-              </Link>
+                <Youtube className="h-5 w-5" />
+                <span className="sr-only">YouTube</span>
+              </a>
               <a
                 href="https://instagram.com/g_sabato"
                 target="_blank"

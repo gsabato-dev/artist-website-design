@@ -107,8 +107,9 @@ export default function ContactPage() {
                         <SelectValue placeholder="Select an option" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="milonga">Milonga</SelectItem>
-                        <SelectItem value="concert">Concert</SelectItem>
+                        <SelectItem value="milonga">Milonga / Tango event (for dancers)</SelectItem>
+                        <SelectItem value="concert">Concert / Live listening set</SelectItem>
+                        <SelectItem value="ceremony">Ceremony (wedding, ritual, special occasion)</SelectItem>
                         <SelectItem value="private">Private event</SelectItem>
                         <SelectItem value="other">Other</SelectItem>
                       </SelectContent>
