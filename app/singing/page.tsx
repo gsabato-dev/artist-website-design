@@ -37,7 +37,8 @@ export default function SingingPage() {
         {/* Types of Events */}
         <section className="container mx-auto px-4 lg:px-8 py-20">
           <div className="max-w-5xl mx-auto">
-            <h2 className="font-serif text-3xl md:text-4xl mb-14 text-center">Types of events</h2>
+            <h2 className="font-serif text-3xl md:text-4xl mb-4 text-center">Types of events</h2>
+            <p className="text-center text-muted-foreground mb-12">Each available as solo, duo, or ensemble</p>
             <div className="grid md:grid-cols-3 gap-6 lg:gap-10">
               <Card className="group border-2 border-transparent hover:border-accent/20 transition-all duration-300 hover:shadow-lg">
                 <CardContent className="p-8 text-center">
@@ -71,7 +72,7 @@ export default function SingingPage() {
             </div>
             <div className="mt-10 flex justify-center">
               <Button asChild size="lg">
-                <Link href="/contact">Request a booking</Link>
+                <Link href="/contact">Request a Singing Booking</Link>
               </Button>
             </div>
           </div>
@@ -83,7 +84,7 @@ export default function SingingPage() {
             <div className="max-w-4xl mx-auto">
               <h2 className="font-serif text-3xl md:text-4xl mb-4 text-center">Performances</h2>
               <p className="text-center text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
-                Audience recordings from live events.
+                Below are audience recordings from recent performances at Berlin's top tango venues. Each shows a different setting and style of performance available for booking.
               </p>
               <VideoCarousel />
             </div>
@@ -140,7 +141,7 @@ export default function SingingPage() {
               Bring the spirit of Buenos Aires tango to your event
             </p>
             <Button asChild size="lg" variant="secondary" className="text-base px-8 py-6">
-              <Link href="/contact">Request a booking</Link>
+              <Link href="/contact">Request a Singing Booking</Link>
             </Button>
           </div>
         </section>

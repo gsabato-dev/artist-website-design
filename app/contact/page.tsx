@@ -64,9 +64,10 @@ export default function ContactPage() {
           <div className="container relative z-10 mx-auto px-4 lg:px-8">
             <div className="max-w-3xl mx-auto text-center">
               <h1 className="font-serif text-4xl md:text-6xl mb-6 text-primary-foreground">Contact</h1>
-              <p className="text-lg text-primary-foreground/90">
-                Get in touch about singing performances and bookings
+              <p className="text-lg text-primary-foreground/90 mb-2">
+                For singing performances and event bookings
               </p>
+
             </div>
           </div>
         </section>

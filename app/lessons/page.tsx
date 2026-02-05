@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
-import { Music2, User, Users, Heart } from "lucide-react"
+import { Music2, User, Users, Heart, Users2, Calendar, Monitor, Target, Footprints } from "lucide-react"
 
 export default function LessonsPage() {
   return (
@@ -26,7 +26,7 @@ export default function LessonsPage() {
                 Private Tango Lessons
               </h1>
               <p className="text-lg md:text-xl text-primary-foreground/90 text-pretty leading-relaxed">
-                I'll help you dance tango in a way that feels good and looks great.
+                I'll help you dance tango in a way that feels good, looks great, and is fun!
               </p>
             </div>
           </div>
@@ -35,7 +35,7 @@ export default function LessonsPage() {
         {/* Lesson Options */}
         <section className="container mx-auto px-4 lg:px-8 py-24">
           <div className="max-w-7xl mx-auto">
-            <h2 className="font-serif text-3xl md:text-4xl mb-12 text-center">Lesson Options</h2>
+            <h2 className="font-serif text-3xl md:text-4xl mb-12 text-center">What I offer</h2>
             <div className="grid md:grid-cols-3 gap-10">
               {/* Card 1: Private Lessons */}
               <Card className="border-2">
@@ -223,7 +223,7 @@ export default function LessonsPage() {
                   <p className="text-muted-foreground italic mb-4">
                     "Being a dance teacher myself, I appreciate Gabriele's skill and reliability. In our private sessions I didn't only improve my tango; I learned a lot about myself. We worked on connection, posture, body tension, and how to make an embrace feel comfortable. His teaching gave me inspiration for other areas of my life. Highly recommended"
                   </p>
-                  <p className="text-sm text-muted-foreground">— Judith, Berlin</p>
+                  <p className="text-sm text-muted-foreground">Judith, Berlin</p>
                 </CardContent>
               </Card>
               <Card>
@@ -231,9 +231,93 @@ export default function LessonsPage() {
                   <p className="text-muted-foreground italic mb-4">
                     "Wildly professional and slightly dangerous to your comfort zone. He'll crawl into your brain and rearrange how your body moves. Yes, he's overpriced, and yes, he's absolutely worth it. The lessons are tough, ridiculously fun, and never boring. You'll complain, laugh, sweat, and then shamelessly book the next lesson anyway"
                   </p>
-                  <p className="text-sm text-muted-foreground">— Pauline, Berlin</p>
+                  <p className="text-sm text-muted-foreground">Pauline, Berlin</p>
                 </CardContent>
               </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section className="bg-muted/30 py-24">
+          <div className="container mx-auto px-4 lg:px-8">
+            <div className="max-w-5xl mx-auto">
+            <h2 className="font-serif text-3xl md:text-4xl mb-12 text-center">Frequently Asked Questions</h2>
+            <div className="grid md:grid-cols-2 gap-10">
+              <div className="space-y-4">
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                      <Users2 className="h-5 w-5 text-primary" />
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="font-serif text-lg mb-2">Do I need a partner to start?</h3>
+                    <p className="text-muted-foreground leading-relaxed text-sm">
+                      No, I work with solo dancers and couples. Many of my students start alone.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                      <Calendar className="h-5 w-5 text-primary" />
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="font-serif text-lg mb-2">How long until I can dance at a milonga?</h3>
+                    <p className="text-muted-foreground leading-relaxed text-sm">
+                      Most dedicated students can join a beginner milonga (tango social dancing event) within 6 to 8 weeks of regular lessons.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                      <Monitor className="h-5 w-5 text-primary" />
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="font-serif text-lg mb-2">Do you teach online?</h3>
+                    <p className="text-muted-foreground leading-relaxed text-sm">
+                      I primarily teach in-studio in Friedrichshain, where I can watch your body and give hands-on feedback. This is essential for tango.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="space-y-4">
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                      <Footprints className="h-5 w-5 text-primary" />
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="font-serif text-lg mb-2">What should I wear?</h3>
+                    <p className="text-muted-foreground leading-relaxed text-sm">
+                      Comfortable clothing that lets you move. Many students wear dance shoes, but socks are also fine to start.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                      <Target className="h-5 w-5 text-primary" />
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="font-serif text-lg mb-2">What's the difference between your lessons and dance studios?</h3>
+                    <p className="text-muted-foreground leading-relaxed text-sm">
+                      I offer personalized one-on-one instruction. I focus on your individual needs (connection, musicality, or technique) leading to the fastest way of learning.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
             </div>
           </div>
         </section>

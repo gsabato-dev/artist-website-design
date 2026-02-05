@@ -25,9 +25,21 @@ export default function Home() {
             <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl mb-6 text-balance text-primary-foreground">
               Tango teacher, singer and performer
             </h1>
-            <p className="text-lg md:text-xl text-primary-foreground/95 max-w-2xl mx-auto text-pretty">
-              I'm Gabriele. I teach tango and perform as a singer in Berlin.
+            <p className="text-lg md:text-xl text-primary-foreground/95 max-w-2xl mx-auto text-pretty mb-8">
+              I'm Gabriele, born to an Argentine mother. Nearly 20 years as a tango dancer and singer, classically trained, teaching and performing in Berlin's tango scene.
             </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button asChild variant="secondary" size="lg">
+                <Link href="#video">
+                  Watch a Live Show
+                </Link>
+              </Button>
+              <Button asChild variant="outline" size="lg" className="bg-white/20 border-white text-white hover:bg-white/30">
+                <Link href="/singing#videos">
+                  Listen to a Live Performance
+                </Link>
+              </Button>
+            </div>
           </div>
         </section>
 
@@ -45,6 +57,9 @@ export default function Home() {
                   with a partner, I teach all levels and focus on connection, musicality, and technique that actually
                   works.
                 </p>
+                <p className="text-sm text-muted-foreground mb-6">
+                  €80/hour • All levels • At my studio in Friedrichshain
+                </p>
                 <Button asChild className="w-full">
                   <Link href="/lessons">Learn more</Link>
                 </Button>
@@ -60,6 +75,9 @@ export default function Home() {
                 <p className="text-muted-foreground mb-6 leading-relaxed">
                   I bring traditional tango singing to your milonga, concert, or private event.
                   Live performances rooted in the authentic spirit of Buenos Aires.
+                </p>
+                <p className="text-sm text-muted-foreground mb-6">
+                  Milongas • Concerts • Weddings • Solo or ensemble
                 </p>
                 <Button asChild variant="outline" className="w-full bg-transparent">
                   <Link href="/singing">Learn more</Link>
