@@ -29,7 +29,7 @@ export default function Home() {
               Learn tango, embrace your body!
             </h1>
             <p className="text-lg md:text-xl text-primary-foreground/95 max-w-2xl mx-auto text-pretty mb-8">
-              I'm Gabriele: tango dancer for nearly 20 years, classically trained singer, son of a porteña from Buenos Aires. I teach and perform in Berlin, helping dancers find their own natural expression.
+              I'm Gabriele, tango dancer for nearly 20 years, classically trained singer, son of a porteña from Buenos Aires. I teach and perform in Berlin, helping you find your natural expression in the dance.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild variant="secondary" size="lg">
