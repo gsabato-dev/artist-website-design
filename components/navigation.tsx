@@ -30,6 +30,11 @@ export function Navigation() {
                 {link.label}
               </Link>
             ))}
+            <Button asChild className="ml-4">
+              <Link href="https://cal.com/gabriele-tango/private-lesson" target="_blank" rel="noopener noreferrer">
+                Book your Tango Lesson
+              </Link>
+            </Button>
           </div>
 
           {/* Mobile Navigation */}
@@ -51,6 +56,11 @@ export function Navigation() {
                     {link.label}
                   </Link>
                 ))}
+                <Button asChild className="mt-4 w-full">
+                  <Link href="https://cal.com/gabriele-tango/private-lesson" target="_blank" rel="noopener noreferrer">
+                    Book your Tango Lesson
+                  </Link>
+                </Button>
               </nav>
             </SheetContent>
           </Sheet>
