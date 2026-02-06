@@ -83,25 +83,6 @@ export default function Home() {
 
             <Card className="border-2 hover:border-primary/50 transition-colors">
               <CardContent className="p-8">
-                <div className="mb-6 inline-flex p-3 bg-primary/10 rounded-lg">
-                  <Mic2 className="h-8 w-8 text-primary" />
-                </div>
-                <h2 className="font-serif text-2xl md:text-3xl mb-4">Performances</h2>
-                <p className="text-muted-foreground mb-6 leading-relaxed">
-                  Professional tango performances for your event. Whether dancing, singing, or both, I bring the authentic
-                  spirit of Buenos Aires to milongas, concerts, and special occasions.
-                </p>
-                <p className="text-sm text-muted-foreground mb-6">
-                  Milongas • Concerts • Weddings • DJ services
-                </p>
-                <Button asChild variant="outline" className="w-full bg-transparent">
-                  <Link href="/contact">Book a Performance</Link>
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="border-2 hover:border-primary/50 transition-colors">
-              <CardContent className="p-8">
                 <div className="mb-6 inline-flex p-3 bg-accent/10 rounded-lg">
                   <Music className="h-8 w-8 text-accent" />
                 </div>
@@ -116,6 +97,30 @@ export default function Home() {
                 <Button asChild variant="outline" className="w-full bg-transparent">
                   <Link href="/singing">Learn more</Link>
                 </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 hover:border-primary/50 transition-colors">
+              <CardContent className="p-8">
+                <div className="mb-6 inline-flex p-3 bg-primary/10 rounded-lg">
+                  <Mic2 className="h-8 w-8 text-primary" />
+                </div>
+                <h2 className="font-serif text-2xl md:text-3xl mb-4">Dance</h2>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  Want to bring some spice into your event? I perform tango dances at milongas, concerts, and private celebrations,
+                  bringing authentic Argentine passion and energy to your gathering.
+                </p>
+                <p className="text-sm text-muted-foreground mb-6">
+                  Milongas • Concerts • Weddings • Celebrations
+                </p>
+                <div className="flex flex-col gap-3">
+                  <Button asChild className="w-full">
+                    <Link href="/contact">Book a Performance</Link>
+                  </Button>
+                  <Button asChild variant="outline" className="w-full bg-transparent">
+                    <Link href="#video">Watch a Performance</Link>
+                  </Button>
+                </div>
               </CardContent>
             </Card>
           </div>
