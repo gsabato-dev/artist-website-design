@@ -19,7 +19,7 @@ export default function Home() {
               backgroundPosition: "center 47%",
             }}
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/30 via-primary/25 to-accent/35" />
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/60 via-primary/50 to-accent/60" />
           <div className="container relative z-10 mx-auto px-4 lg:px-8 py-24 text-center">
             <p className="text-sm md:text-base uppercase tracking-widest text-primary-foreground/80 mb-4">
               Tango teacher, singer & performer
@@ -167,8 +167,8 @@ export default function Home() {
                 deep musicality and authentic Argentine expression to every performance.
               </p>
               <p>
-                My background as a university teacher and somatic movement coach shaped how I structure my lessons.
-                I combine clear, analytical instruction—understanding the "why" behind every step—with embodied learning
+                My background as a university teacher and somatic coach shaped how I structure my lessons.
+                I combine clear, analytical instruction, understanding the "why" behind every step, with embodied learning
                 that lets your body actually feel and integrate the movement. You leave each lesson not just knowing
                 what to do, but feeling it in your body, ready to dance with confidence and presence.
               </p>
