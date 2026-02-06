@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
-import { TestimonialCarousel } from "@/components/testimonial-carousel"
 import { Music, Users, Mic2 } from "lucide-react"
 
 export default function Home() {
@@ -123,13 +122,6 @@ export default function Home() {
                 </div>
               </CardContent>
             </Card>
-          </div>
-        </section>
-
-        {/* Testimonial Strip */}
-        <section className="bg-muted py-16">
-          <div className="container mx-auto px-4 lg:px-8">
-            <TestimonialCarousel />
           </div>
         </section>
 
