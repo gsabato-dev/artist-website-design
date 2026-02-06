@@ -36,7 +36,7 @@ export default function Home() {
                   Book a Lesson
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="bg-white/20 border-white text-white hover:bg-white/30">
+              <Button asChild variant="outline" size="lg" className="bg-white/40 border-white text-white hover:bg-white/50">
                 <Link href="#video">
                   Watch a Performance
                 </Link>
