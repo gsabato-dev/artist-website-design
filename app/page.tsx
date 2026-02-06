@@ -167,9 +167,10 @@ export default function Home() {
                 deep musicality and authentic Argentine expression to every performance.
               </p>
               <p>
-                I've been teaching for over ten years, combining clear structure with a body-based approach that helps you learn
-                in a way that actually sticks. As a performer and teacher, I share what my mentors taught me: how to dance and sing
-                with genuine connection, musicality, and natural expression.
+                My background as a university teacher and somatic movement coach shaped how I structure my lessons.
+                I combine clear, analytical instruction—understanding the "why" behind every step—with embodied learning
+                that lets your body actually feel and integrate the movement. You leave each lesson not just knowing
+                what to do, but feeling it in your body, ready to dance with confidence and presence.
               </p>
             </div>
           </div>
