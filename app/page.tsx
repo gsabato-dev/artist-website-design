@@ -22,24 +22,39 @@ export default function Home() {
           />
           <div className="absolute inset-0 bg-gradient-to-br from-primary/30 via-primary/25 to-accent/35" />
           <div className="container relative z-10 mx-auto px-4 lg:px-8 py-24 text-center">
+            <p className="text-sm md:text-base uppercase tracking-widest text-primary-foreground/80 mb-4">
+              Tango teacher, singer & performer
+            </p>
             <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl mb-6 text-balance text-primary-foreground">
-              Tango teacher, singer and performer
+              Learn tango, embrace your body!
             </h1>
             <p className="text-lg md:text-xl text-primary-foreground/95 max-w-2xl mx-auto text-pretty mb-8">
-              I'm Gabriele, born to an Argentine mother. Nearly 20 years as a tango dancer and singer, classically trained, teaching and performing in Berlin's tango scene.
+              I'm Gabriele — nearly 20 years of tango, classically trained, teaching and performing in Berlin. I'll help you dance in a way that feels natural and truly yours.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild variant="secondary" size="lg">
-                <Link href="#video">
-                  Watch a Live Show
+                <Link href="https://cal.com/gabriele-tango/private-lesson" target="_blank" rel="noopener noreferrer">
+                  Book a Lesson
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="bg-white/20 border-white text-white hover:bg-white/30">
-                <Link href="/singing#videos">
-                  Listen to a Live Performance
+                <Link href="#video">
+                  Watch a Performance
                 </Link>
               </Button>
             </div>
+          </div>
+        </section>
+
+        {/* Social Proof Quote */}
+        <section className="bg-muted/50 py-8">
+          <div className="container mx-auto px-4 lg:px-8">
+            <blockquote className="max-w-3xl mx-auto text-center">
+              <p className="text-lg md:text-xl italic text-muted-foreground">
+                "He'll crawl into your brain and rearrange how your body moves. The lessons are tough, ridiculously fun, and never boring."
+              </p>
+              <footer className="mt-3 text-sm text-muted-foreground">— Pauline, Berlin</footer>
+            </blockquote>
           </div>
         </section>
 
@@ -126,25 +141,14 @@ export default function Home() {
             <h2 className="font-serif text-3xl md:text-4xl">About me</h2>
             <div className="space-y-4 text-lg leading-relaxed text-muted-foreground">
               <p>
-                I'm Gabriele, a tango teacher, singer, and performer based in Berlin. I was born in Southern Italy to
-                an Argentinian mother, and I discovered tango almost twenty years ago. I started dancing in Rome,
-                studying with many different teachers and building a strong foundation in technique, musicality, and
-                improvisation.
-              I've performed at festivals and milongas locally and internationally, sharing tango
-                through dance. </p>
-              <p>My background in classical music and years of choral singing naturally led me to tango
-                music, first as a DJ, then as a singer. 
-              
-                As a DJ, I've played at festivals and milongas worldwide,
-                including in Buenos Aires.
+                Born in Southern Italy to an Argentinian mother, I discovered tango nearly twenty years ago.
+                My classical music background and years of choral singing shaped how I approach both dancing and performing —
+                with deep attention to musicality, connection, and expression.
               </p>
               <p>
-                As a singer, I've performed with musicians and ensembles in Berlin and internationally, bringing tango
-                music to milongas, concerts, and other creative settings.
-              </p>
-              <p>
-                I've been teaching tango for over ten years, combining clear structure with a body-based approach that
-                helps you learn in a way that actually sticks.
+                I've been teaching for over ten years, combining clear structure with a body-based approach
+                that helps you learn in a way that actually sticks. As a singer, I perform regularly throughout
+                Berlin's tango scene and internationally.
               </p>
             </div>
           </div>
@@ -153,18 +157,18 @@ export default function Home() {
         {/* Final CTA */}
         <section className="bg-primary text-primary-foreground py-16">
           <div className="container mx-auto px-4 lg:px-8 text-center">
-            <h2 className="font-serif text-3xl md:text-4xl mb-6">Ready to begin?</h2>
+            <h2 className="font-serif text-3xl md:text-4xl mb-6">Start your tango journey</h2>
             <p className="text-lg mb-8 opacity-90 max-w-2xl mx-auto">
-              Whether you're looking for private lessons or booking a performance, I'd love to hear from you.
+              Book your first lesson and discover how tango can transform the way you move and connect.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="secondary">
                 <Link href="https://cal.com/gabriele-tango/private-lesson" target="_blank" rel="noopener noreferrer">
-                  Book a Lesson
+                  Book Your First Lesson
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="bg-white/20 border-white text-white hover:bg-white/30">
-                <Link href="/contact">Request a Singing Booking</Link>
+                <Link href="/contact">Book a Performance</Link>
               </Button>
             </div>
           </div>
