@@ -60,7 +60,7 @@ export default function Home() {
 
         {/* Three Offer Blocks */}
         <section className="container mx-auto px-4 lg:px-8 py-24">
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
             <Card className="border-2 hover:border-primary/50 transition-colors">
               <CardContent className="p-8">
                 <div className="mb-6 inline-flex p-3 bg-primary/10 rounded-lg">
@@ -105,7 +105,7 @@ export default function Home() {
                 <div className="mb-6 inline-flex p-3 bg-primary/10 rounded-lg">
                   <Mic2 className="h-8 w-8 text-primary" />
                 </div>
-                <h2 className="font-serif text-2xl md:text-3xl mb-4">Dance</h2>
+                <h2 className="font-serif text-2xl md:text-3xl mb-4">Dance Performance</h2>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
                   Want to bring some spice into your event? I perform tango dances at milongas, concerts, and private celebrations,
                   bringing authentic Argentine passion and energy to your gathering.
