@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
-import { Music, Users, Mic2 } from "lucide-react"
+import { Music, User, Mic2, Sparkles } from "lucide-react"
 
 export default function Home() {
   return (
@@ -63,7 +63,7 @@ export default function Home() {
             <Card className="border-2 hover:border-primary/50 transition-colors">
               <CardContent className="p-8">
                 <div className="mb-6 inline-flex p-3 bg-primary/10 rounded-lg">
-                  <Users className="h-8 w-8 text-primary" />
+                  <User className="h-8 w-8 text-primary" />
                 </div>
                 <h2 className="font-serif text-2xl md:text-3xl mb-4">Private Tango Lessons</h2>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -83,7 +83,7 @@ export default function Home() {
             <Card className="border-2 hover:border-primary/50 transition-colors">
               <CardContent className="p-8">
                 <div className="mb-6 inline-flex p-3 bg-accent/10 rounded-lg">
-                  <Music className="h-8 w-8 text-accent" />
+                  <Mic2 className="h-8 w-8 text-accent" />
                 </div>
                 <h2 className="font-serif text-2xl md:text-3xl mb-4">Singing for Events</h2>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -102,7 +102,7 @@ export default function Home() {
             <Card className="border-2 hover:border-primary/50 transition-colors">
               <CardContent className="p-8">
                 <div className="mb-6 inline-flex p-3 bg-primary/10 rounded-lg">
-                  <Mic2 className="h-8 w-8 text-primary" />
+                  <Sparkles className="h-8 w-8 text-primary" />
                 </div>
                 <h2 className="font-serif text-2xl md:text-3xl mb-4">Dance Performance</h2>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
