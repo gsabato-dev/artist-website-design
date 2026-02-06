@@ -29,7 +29,7 @@ export default function Home() {
               Learn tango, embrace your body!
             </h1>
             <p className="text-lg md:text-xl text-primary-foreground/95 max-w-2xl mx-auto text-pretty mb-8">
-              I'm Gabriele — nearly 20 years of tango, classically trained, teaching and performing in Berlin. I'll help you dance in a way that feels natural and truly yours.
+              I'm Gabriele: nearly 20 years of tango, classically trained, teaching and performing in Berlin. I'll help you dance in a way that feels natural and truly yours.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild variant="secondary" size="lg">
@@ -53,7 +53,7 @@ export default function Home() {
               <p className="text-lg md:text-xl italic text-muted-foreground">
                 "He'll crawl into your brain and rearrange how your body moves. The lessons are tough, ridiculously fun, and never boring."
               </p>
-              <footer className="mt-3 text-sm text-muted-foreground">— Pauline, Berlin</footer>
+              <footer className="mt-3 text-sm text-muted-foreground">Pauline, Berlin</footer>
             </blockquote>
           </div>
         </section>
@@ -142,7 +142,7 @@ export default function Home() {
             <div className="space-y-4 text-lg leading-relaxed text-muted-foreground">
               <p>
                 Born in Southern Italy to an Argentinian mother, I discovered tango nearly twenty years ago.
-                My classical music background and years of choral singing shaped how I approach both dancing and performing —
+                My classical music background and years of choral singing shaped how I approach both dancing and performing:
                 with deep attention to musicality, connection, and expression.
               </p>
               <p>
