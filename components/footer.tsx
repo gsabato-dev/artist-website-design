@@ -9,7 +9,7 @@ export function Footer() {
           <div>
             <h3 className="font-serif text-lg mb-4">Gabriele Tango</h3>
             <p className="text-sm text-muted-foreground">
-              Private tango lessons and live tango singing for events in Berlin.
+              Private tango lessons and live tango performances for events in Berlin.
             </p>
           </div>
 
