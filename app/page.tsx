@@ -19,7 +19,7 @@ export default function Home() {
               backgroundPosition: "center 47%",
             }}
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/60 via-primary/50 to-accent/60" />
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/45 via-primary/40 to-accent/50" />
           <div className="container relative z-10 mx-auto px-4 lg:px-8 py-24 text-center">
             <p className="text-sm md:text-base uppercase tracking-widest text-primary-foreground/80 mb-4">
               Tango teacher, singer & performer
