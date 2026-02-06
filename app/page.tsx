@@ -89,7 +89,7 @@ export default function Home() {
                 <h2 className="font-serif text-2xl md:text-3xl mb-4">Singing for Events</h2>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
                   I bring traditional tango singing to your milonga, concert, or private event.
-                  Live performances rooted in the authentic spirit of Buenos Aires.
+                  My performances are rooted in the authentic spirit of Buenos Aires, performed solo, with musicians, or as part of an ensemble.
                 </p>
                 <p className="text-sm text-muted-foreground mb-6">
                   Milongas • Concerts • Weddings • Solo or ensemble
