@@ -158,13 +158,18 @@ export default function Home() {
             <div className="space-y-4 text-lg leading-relaxed text-muted-foreground">
               <p>
                 Born in Southern Italy to an Argentinian mother, I discovered tango nearly twenty years ago.
-                My training as a classical singer and years of choral performance shaped how I approach both dancing and singing:
-                with deep attention to musicality, connection, and expression.
+                I studied dance with renowned teachers including Javier Rodriguez and Andres Laza Moreno, building a strong foundation
+                in technique, musicality, and improvisation.
               </p>
               <p>
-                I've been teaching for over ten years, combining clear structure with a body-based approach
-                that helps you learn in a way that actually sticks. As a singer, I perform regularly throughout
-                Berlin's tango scene and internationally.
+                My training as a classical singer and years of choral performance shaped how I approach both dancing and singing.
+                For singing, I trained with exceptional tango vocalists including Carlos Rossi and Roberto Minondi, bringing
+                deep musicality and authentic Argentine expression to every performance.
+              </p>
+              <p>
+                I've been teaching for over ten years, combining clear structure with a body-based approach that helps you learn
+                in a way that actually sticks. As a performer and teacher, I share what my mentors taught me: how to dance and sing
+                with genuine connection, musicality, and natural expression.
               </p>
             </div>
           </div>
