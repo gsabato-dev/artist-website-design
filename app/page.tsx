@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { TestimonialCarousel } from "@/components/testimonial-carousel"
-import { Music, Users } from "lucide-react"
+import { Music, Users, Mic2 } from "lucide-react"
 
 export default function Home() {
   return (
@@ -58,9 +58,9 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Two Offer Blocks */}
+        {/* Three Offer Blocks */}
         <section className="container mx-auto px-4 lg:px-8 py-24">
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <Card className="border-2 hover:border-primary/50 transition-colors">
               <CardContent className="p-8">
                 <div className="mb-6 inline-flex p-3 bg-primary/10 rounded-lg">
@@ -77,6 +77,25 @@ export default function Home() {
                 </p>
                 <Button asChild className="w-full">
                   <Link href="/lessons">Learn more</Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 hover:border-primary/50 transition-colors">
+              <CardContent className="p-8">
+                <div className="mb-6 inline-flex p-3 bg-primary/10 rounded-lg">
+                  <Mic2 className="h-8 w-8 text-primary" />
+                </div>
+                <h2 className="font-serif text-2xl md:text-3xl mb-4">Performances</h2>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  Professional tango performances for your event. Whether dancing, singing, or both, I bring the authentic
+                  spirit of Buenos Aires to milongas, concerts, and special occasions.
+                </p>
+                <p className="text-sm text-muted-foreground mb-6">
+                  Milongas • Concerts • Weddings • DJ services
+                </p>
+                <Button asChild variant="outline" className="w-full bg-transparent">
+                  <Link href="/contact">Book a Performance</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -161,16 +180,11 @@ export default function Home() {
             <p className="text-lg mb-8 opacity-90 max-w-2xl mx-auto">
               Book your first lesson and discover how tango can transform the way you move and connect.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" variant="secondary">
-                <Link href="https://cal.com/gabriele-tango/private-lesson" target="_blank" rel="noopener noreferrer">
-                  Book Your First Lesson
-                </Link>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="bg-white/20 border-white text-white hover:bg-white/30">
-                <Link href="/contact">Book a Performance</Link>
-              </Button>
-            </div>
+            <Button asChild size="lg" variant="secondary">
+              <Link href="https://cal.com/gabriele-tango/private-lesson" target="_blank" rel="noopener noreferrer">
+                Book Your First Lesson
+              </Link>
+            </Button>
           </div>
         </section>
       </main>
