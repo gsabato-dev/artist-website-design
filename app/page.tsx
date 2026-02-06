@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
+import { TestimonialCarousel } from "@/components/testimonial-carousel"
 import { Music, User, Mic2, Sparkles } from "lucide-react"
 
 export default function Home() {
@@ -45,15 +46,10 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Social Proof Quote */}
-        <section className="bg-muted/50 py-8">
+        {/* Testimonial Carousel */}
+        <section className="bg-muted py-16">
           <div className="container mx-auto px-4 lg:px-8">
-            <blockquote className="max-w-3xl mx-auto text-center">
-              <p className="text-lg md:text-xl italic text-muted-foreground">
-                "He'll crawl into your brain and rearrange how your body moves. The lessons are tough, ridiculously fun, and never boring."
-              </p>
-              <footer className="mt-3 text-sm text-muted-foreground">Pauline, Berlin</footer>
-            </blockquote>
+            <TestimonialCarousel />
           </div>
         </section>
 
