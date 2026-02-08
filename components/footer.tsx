@@ -6,21 +6,20 @@ export function Footer() {
   return (
     <footer className="border-t border-border bg-card mt-24">
       <div className="container mx-auto px-4 lg:px-8 py-12">
-        <div className="flex justify-center mb-8">
-          <div className="w-16 h-16 rounded-full overflow-hidden flex items-center justify-center bg-background">
-            <Image
-              src="/images/gabrieletango_logo.png"
-              alt="Gabriele Tango Logo"
-              width={64}
-              height={64}
-              className="object-contain"
-            />
-          </div>
-        </div>
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           <div>
-            <h3 className="font-serif text-lg mb-4">Gabriele Tango</h3>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 rounded-full overflow-hidden flex items-center justify-center flex-shrink-0">
+                <Image
+                  src="/images/gabrieletango_logo_navy.png"
+                  alt="Gabriele Tango Logo"
+                  width={40}
+                  height={40}
+                  className="object-contain"
+                />
+              </div>
+              <h3 className="font-serif text-lg">Gabriele Tango</h3>
+            </div>
             <p className="text-sm text-muted-foreground">
               Private tango lessons and live tango performances for events in Berlin.
             </p>

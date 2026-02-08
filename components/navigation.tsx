@@ -19,7 +19,7 @@ export function Navigation() {
           <Link href="/" className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-full overflow-hidden flex items-center justify-center bg-background">
               <Image
-                src="/images/gabrieletango_logo.png"
+                src="/images/gabrieletango_logo_navy.png"
                 alt="Gabriele Tango Logo"
                 width={40}
                 height={40}
