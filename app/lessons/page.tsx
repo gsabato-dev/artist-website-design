@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
-import { Music2, User, Users, Heart, Users2, Calendar, Monitor, Target, Footprints } from "lucide-react"
+import { Music2, User, Users, Heart, Users2, Calendar, Monitor, Target, Footprints, Rocket } from "lucide-react"
 
 export default function LessonsPage() {
   return (
@@ -50,6 +50,8 @@ export default function LessonsPage() {
                     <div>
                       <p className="text-base text-muted-foreground">
                         I work with you one-on-one (or with your partner) to focus on exactly what you need.
+
+Work on connection, technique, musicality, or specific movements. Progress at your own pace with personalized feedback.
                       </p>
                     </div>
 
@@ -83,40 +85,45 @@ export default function LessonsPage() {
                 </CardContent>
               </Card>
 
-              {/* Card 2: Focused Small Groups */}
+              {/* Card 2: From Zero to Tango */}
               <Card className="border-2">
                 <CardContent className="p-8">
                   <div className="mb-6 inline-flex p-4 bg-primary/10 rounded-lg">
-                    <Users className="h-8 w-8 text-primary" />
+                    <Rocket className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="font-serif text-xl md:text-2xl mb-4">Focused Small Groups</h3>
+                  <h3 className="font-serif text-xl md:text-2xl mb-2">From Zero to Tango</h3>
+                  <p className="text-sm text-muted-foreground mb-4 italic">6-Week Intensive for Small Groups (max 6 people)</p>
 
                   <div className="space-y-6">
                     {/* Description */}
                     <div>
                       <p className="text-base text-muted-foreground">
-                        Learn with your friends in a fun, relaxed, and focused setting.
+                        Learn tango fundamentals: walking, embrace, ochos, and musicality. Six consecutive weeks, with each lesson building on the previous one. 
                       </p>
                     </div>
 
-                    {/* Pricing */}
-                    <div className="pt-4 border-t border-border">
-                      <p className="text-xs uppercase tracking-wider text-muted-foreground mb-2">Pricing</p>
-                      <p className="text-lg font-medium text-foreground">€120 / 1.5 hours</p>
-                      <p className="text-sm text-muted-foreground mt-2">Max 6 people per group</p>
-                    </div>
-
-                    {/* Location */}
-                    <div className="pt-4 border-t border-border">
-                      <p className="text-xs uppercase tracking-wider text-muted-foreground mb-2">Location</p>
-                      <p className="text-sm text-foreground">At my studio in Friedrichshain</p>
+                    {/* Details */}
+                    <div className="pt-4 border-t border-border space-y-3">
+                      <div>
+                        <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">Pricing</p>
+                        <p className="text-lg font-medium text-foreground">€120 per person</p>
+                        <p className="text-sm text-muted-foreground">(all 6 weeks, 1.5 hours per class)</p>
+                      </div>
+                      <div>
+                        <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">Next Cohort</p>
+                        <p className="text-sm text-foreground">March 2026, Thursdays 19:30-21:00</p>
+                      </div>
+                      <div>
+                        <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">Location</p>
+                        <p className="text-sm text-foreground">At my studio in Friedrichshain</p>
+                      </div>
                     </div>
 
                     {/* Button */}
                     <div className="pt-4 border-t border-border">
                       <Button asChild className="w-full">
-                        <Link href="https://cal.com/gabriele-tango/focused-small-group" target="_blank" rel="noopener noreferrer">
-                          Book a Focused Group Lesson
+                        <Link href="https://wa.me/393519252854?text=Hi%20Gabriele,%20interested%20in%20Zero%20to%20Tango%20intensive" target="_blank" rel="noopener noreferrer">
+                          WhatsApp to join next cohort
                         </Link>
                       </Button>
                     </div>
@@ -137,6 +144,8 @@ export default function LessonsPage() {
                     <div>
                       <p className="text-base text-muted-foreground">
                         A focused, in-depth session designed for concentrated work. Ideal for couples or specific technical goals.
+
+Deep dive into specific topics: embrace technique, musicality, improvisation, or navigation. 
                       </p>
                     </div>
 
